@@ -1,0 +1,10 @@
+@use "./variables" as *;
+
+html {
+  font-size: $fontSize;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: $lineHeight;
+  letter-spacing: $letterSacing;
+  background-color:rgb(0, 72, 105);
+}
