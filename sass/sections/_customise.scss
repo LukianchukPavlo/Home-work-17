@@ -32,13 +32,13 @@
             position: absolute;
             bottom: 0;
             left: 40%;
-            transform: translate(-15px, 25px);
-            width: 500px;
-            height: 50px;
-            background-image: url("../../images/highlight.svg");
+            transform: translate(-35px, 5px);
+            width: 350px;
+            height: 40px;
+            background-image: url("/images/highlight.svg");
             background-repeat: no-repeat;
             z-index: -1;
-            
+            background-size: contain;
         }
         
     }
