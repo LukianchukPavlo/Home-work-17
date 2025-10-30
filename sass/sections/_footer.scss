@@ -118,14 +118,14 @@
                     transform: translate(160%, -15%);
                     width: 19px;
                     height: 19px;
-                    background-image: url("../../images/Icon-world.svg");
+                    background-image: url("/images/Icon-world.svg");
                 }
                 &::after {
                     content: "";
                     position: absolute;
                     width: 20px;
                     height: 14px;
-                    background-image: url("../../images/arrow-down.svg");
+                    background-image: url("/images/arrow-down1.svg");
                     background-repeat: no-repeat;
                     top: 75%;
                     transform: translate(300%, 0);

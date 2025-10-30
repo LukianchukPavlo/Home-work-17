@@ -218,7 +218,7 @@ a {
   width: 16px;
   height: 8px;
   gap: 0;
-  background: url("/images/sprite.svg#arrow-down") no-repeat;
+  background: url("/images/arrow-down1.svg") no-repeat;
 }
 .header__login {
   margin-right: 24px;
@@ -404,14 +404,14 @@ a {
   transform: translate(160%, -15%);
   width: 19px;
   height: 19px;
-  background-image: url("../../images/Icon-world.svg");
+  background-image: url("/images/Icon-world.svg");
 }
 .footer__terms-list:first-child::after {
   content: "";
   position: absolute;
   width: 20px;
   height: 14px;
-  background-image: url("../../images/arrow-down.svg");
+  background-image: url("/images/arrow-down1.svg");
   background-repeat: no-repeat;
   top: 75%;
   transform: translate(300%, 0);
