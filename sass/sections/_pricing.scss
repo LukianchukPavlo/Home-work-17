@@ -27,7 +27,7 @@
             transform: translate(-15px, 20px);
             width: 320px;
             height: 50px;
-            background-image: url("../../images/highlight.svg");
+            background-image: url("../images/highlight.svg");
             background-repeat: no-repeat;
             background-size: contain;
             z-index: -1;
@@ -41,10 +41,13 @@
     }
 
     &__plan-container {
+        margin-top: 60px;
+    }
+
+    &__plan-slider {
         display: flex;
         align-items: center;
         gap: 32px;
-        margin-top: 60px;
     }
 
     &__plan {
@@ -91,7 +94,7 @@
             height: 20px;
             flex: 0 0 20px;
             margin-right: 20px;
-            background-image: url("../../images/Item-black.svg");
+            background-image: url("../images/Item-black.svg");
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -127,7 +130,52 @@
     &__plan--active &__plan-item {
         &:before {
             content: "";
-            background-image: url("../../images/Icon.svg");
+            background-image: url("../images/Icon.svg");
+        }
+    }
+
+    &__plan-slider-controls {
+        display: none;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 60px;
+        span {
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $primaryColorLight;
+
+                &:nth-child(2) {
+                    background-color: $primaryColorDark;
+                }
+        }
+    }
+}
+
+@include media-down(md) {
+    .pricing {
+        &__plan-container {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 752px;
+            overflow: hidden;
+        }
+
+        &__plan-slider {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: flex;
+            width: auto;
+            height: 752px;
+        }
+
+        &__plan {
+            flex: 1 1 470px;
+            width: 470px;
         }
     }
 }
