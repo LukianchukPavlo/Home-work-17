@@ -1,0 +1,133 @@
+@use "../base" as *;
+
+.pricing {
+    position: relative;
+    background-color: $colorWhite;
+    padding: 140px 0;
+
+    &__container {
+
+    }
+
+    &__container-info {
+        margin-right: 18px; 
+    }
+
+    &__title {
+        position: relative;
+        text-align: center;
+        color: $colorBlack;
+        z-index: 1;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-15px, 20px);
+            width: 320px;
+            height: 50px;
+            background-image: url("../../images/highlight.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: -1;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        margin-top: 24px;
+        color: $colorBlack;
+    }
+
+    &__plan-container {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-top: 60px;
+    }
+
+    &__plan {
+        padding: 40px 44px;
+        border: 1px solid $secondaryColorYellow;
+        border-radius: 10px;
+    }
+
+    &__plan-type {
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: $ParagraphP1SemiBoldFonteSize;
+        line-height: $ParagraphP1SemiBoldLineHeight;
+    }
+
+    &__plan-price {
+        margin-bottom: 25px;
+    }
+
+    &__plan-description {
+        margin-bottom: 25px;
+        font-weight: 500;
+        font-size: $ParagraphP2MediumFonteSize;
+        line-height: $ParagraphP2MediumLineHeight;
+    }
+
+    &__plan-list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    &__plan-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        font-weight: 400;
+        font-style: $ParagraphP3RegularFonteSize;
+        line-height: $ParagraphP3RegularLineHeight;
+        &:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            flex: 0 0 20px;
+            margin-right: 20px;
+            background-image: url("../../images/Item-black.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__get-started {
+        margin-top: 25px;
+    }
+
+    &__plan--active {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: $primaryColorDark;
+    }
+
+    &__plan--active &__plan-type, 
+    &__plan--active &__plan-description,
+    &__plan--active &__plan-list,
+    &__plan--active &__plan-item {
+        color: $colorWhite;
+    }
+
+    &__plan--active &__plan-price {
+        color: $secondaryColorYellow;
+    }
+
+    &__plan--active &__get-started {
+        border: none;
+        background-color: $primaryColorLight;
+        color: $colorWhite;
+    }
+
+    &__plan--active &__plan-item {
+        &:before {
+            content: "";
+            background-image: url("../../images/Icon.svg");
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use "../base/mixins" as *;
+
+
+.container {
+    max-width: 1544px;
+    margin-inline: auto;
+    padding: 0 32px;
+}
+
+@include media-down(lg) {
+    br {
+        display: none;
+    }
+}
+
+@include media-down(md) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@include media-down(sm) {
+    .container {
+        padding: 0 16px;
+    }
+    
+}

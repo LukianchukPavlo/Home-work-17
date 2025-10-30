@@ -5,6 +5,48 @@ html {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: $lineHeight;
-  letter-spacing: $letterSacing;
-  background-color:rgb(0, 72, 105);
+  letter-spacing: $letterSpacing;
+  color: $colorBlack;
+}
+
+h1 {
+  font-size: $H1FontSize;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: $letterSpacing;
+}
+
+h2 {
+  font-size: $H2FontSize;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: $letterSpacing;
+}
+
+h4 {
+  font-size: $H4FontSize;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: $H4LineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+h5 {
+  font-size: $H5FontSize;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: $H5LineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+a {
+  text-decoration: none;
 }

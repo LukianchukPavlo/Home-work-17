@@ -1,0 +1,36 @@
+@use "../base" as *;
+
+.hero {
+    position: relative;
+    background-color: $primaryColorDark;
+    background-image: url("../../images/pattern-1.svg");
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    padding: 140px 0;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__container-info{
+        margin-right: 18px;
+    }
+    &__container-img {
+        max-width: 824px;
+        width: 100%;
+        height: 549px;
+        background-color: $secondaryColorBlue;
+    }
+    &__title {
+        color: $colorWhite;
+    }
+    &__description {
+        margin-top: 24px;
+        color: $colorWhite;
+    }
+    &__try {
+        margin-top: 60px;
+    }
+    
+} 
+

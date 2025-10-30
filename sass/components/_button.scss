@@ -1,0 +1,58 @@
+@use "../base/" as *;
+
+.btn {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: $ParagraphP2MediumFonteSize;
+    line-height: $ParagraphP2MediumLineHeight;
+    border: none;
+    border-radius: 8px;
+
+    &--small {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    &--medium {
+        padding-top: 18.5px;
+        padding-bottom: 18.5px;
+    }
+
+    &--large {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &--px-small{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    &--yellow {
+        background-color: $secondaryColorYellow;
+        color: $primaryColorDark;
+    }
+
+    &--outline-yellow {
+        background-color: $colorWhite;
+        border: 1px solid $secondaryColorYellow;
+        color: $colorBlack;
+    }
+
+    &--blue {
+        background-color: $primaryColorLight;
+        color: $colorWhite;
+    }
+
+    &--arrow{
+        display: flex;
+        align-items: center;
+        &::after{
+            content: "";
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin-left: 10px;
+            background: url("../../images/arrow-left.svg") no-repeat;}
+    }
+}

@@ -1,10 +1,12 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
+const svgSprite = require("gulp-svg-sprite");
 
 // Шляхи
 const paths = {
-  scss: './sass/**/*.scss',
+  scss: './sass/main.scss',
+  allScss: './sass/**/*.scss',
   css: './css',
   html: './*.html'
 };
@@ -17,6 +19,23 @@ function compileSass() {
     .pipe(browserSync.stream()); // автоматичне оновлення
 }
 
+// Компіляція SVG в один справйт
+// ./images/sprite.svg
+function compileSVG() {
+  const config = {
+      mode: {
+          stack: {
+              sprite: "../sprite.svg"
+          }
+      }
+  };
+
+  return gulp.src("images/**/*.svg")
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest("images/"));
+}
+
+
 // Локальний сервер + вотчер
 function serve() {
   browserSync.init({
@@ -25,8 +44,10 @@ function serve() {
     }
   });
 
-  gulp.watch(paths.scss, compileSass);
+  gulp.watch([paths.allScss], compileSass);
   gulp.watch(paths.html).on('change', browserSync.reload);
+
+  compileSVG();
 }
 
 // Задачі

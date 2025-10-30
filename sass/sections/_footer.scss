@@ -1,0 +1,149 @@
+@use "../base" as *;
+
+.footer {
+    padding: 140px 0 65px;
+    background-color: $primaryColorDark;
+
+    &__container{
+        display: flex;
+        position: relative;
+        
+        
+        &:first-child {
+            margin-bottom: 67px;
+            
+            
+        }
+
+        &:last-child {
+            padding-top: 32px;
+            border-top: 1px solid;
+            border-color: #2E4E73;
+            
+           
+            
+        }
+    }
+    
+
+    &__brand {
+        flex: 0 0 240px;
+        margin-right: 60px;
+    }
+
+    &__logo {
+        width: 191px;
+        height: auto;
+    }
+
+    &__description {
+        margin-top: 8px;
+        color: $colorWhite;
+    }
+
+    &__navigation {
+        flex: 0 0 200px;
+        margin-right: 100px;
+    
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &__navigation-title {
+        font-weight: 600;
+        color: $colorWhite;
+    }
+
+    &__navigation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    &__navigation-item {
+
+    }
+
+    &__navigation-link {
+        font-weight: 400;
+        font-size: $ParagraphP3RegularFonteSize;
+        line-height: $ParagraphP3RegularLineHeight;
+        color: $colorWhite;
+
+        &:hover {
+            color: $secondaryColorYellow;
+        }
+    }
+
+    &__try-container {
+        flex: 0 0 260px;
+        margin-left: auto;
+    }
+
+    &__try-title {
+        font-weight: 700;
+        font-size: $H5FontSize;
+        line-height: $H5LineHeight;
+        color: $colorWhite;
+        padding-bottom: 23px;
+        
+    }
+
+    &__try-description {
+        font-weight: 400;
+        font-size: $ParagraphP3RegularFonteSize;
+        line-height: $ParagraphP3RegularLineHeight;
+        color: $colorWhite;
+        padding-bottom: 23px;
+    }
+
+    &__terms {
+        display: flex;
+        
+    }
+
+    &__terms-list {
+        display: flex;
+        gap: 60px;
+        padding-left: 20px;
+        
+            &:first-child {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 65%;
+                    left: 0;
+                    transform: translate(160%, -15%);
+                    width: 19px;
+                    height: 19px;
+                    background-image: url("../../images/Icon-world.svg");
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 14px;
+                    background-image: url("../../images/arrow-down.svg");
+                    background-repeat: no-repeat;
+                    top: 75%;
+                    transform: translate(300%, 0);
+                }    
+        }
+            
+    }
+    &__terms-item {
+        color: $colorWhite;
+        font-weight: 400;
+        font-size: $ParagraphP3RegularFonteSize;
+        line-height: $ParagraphP3RegularLineHeight;
+        }
+    &__icons {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        
+        
+    }
+}

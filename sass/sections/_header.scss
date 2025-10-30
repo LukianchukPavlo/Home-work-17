@@ -1,0 +1,52 @@
+@use "../base/variables" as *;
+
+.header{
+    height: 92px;
+    background-color: $primaryColorDark;
+    &__container {
+       display: flex; 
+       height: 92px;
+       align-items: center;
+    }
+    
+    &__logo-link {
+        text-decoration: none;
+    }
+    &__logo {
+        width: 191px;
+        height: auto;
+    }
+    &__navigation{
+        margin-right: 60px;
+        margin-left: auto;
+    }
+    &__list{
+        display: flex;
+        gap: 70px;
+        list-style-type: none;
+    }
+    &__item{
+        position: relative;
+    }
+    &__link{
+        color: $colorWhite;
+        text-decoration: none;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 16px;
+            height: 8px;
+            gap: 0;
+            background: url("../../images/sprite.svg#arrow-down") no-repeat;
+        }
+    }
+    &__login{
+        margin-right: 24px;
+    } 
+    &__try{
+
+    }
+    
+}
