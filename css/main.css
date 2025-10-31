@@ -109,7 +109,7 @@ a {
   padding: 0 32px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1152px) {
   br {
     display: none;
   }
@@ -552,7 +552,7 @@ a {
   background-color: #043873;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .pricing__plan-container {
     display: block;
     position: relative;
@@ -572,6 +572,45 @@ a {
   .pricing__plan {
     flex: 1 1 470px;
     width: 470px;
+    border-radius: 25px;
+  }
+}
+@media screen and (max-width: 594px) {
+  .pricing__title::after {
+    content: "";
+    transform: translate(-50%, 20px);
+    width: 240px;
+    height: 40px;
+  }
+  .pricing__plan-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .pricing__plan-slider {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate(0, 0);
+  }
+  .pricing__plan {
+    width: 100%;
+    position: relative;
+    height: auto;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .pricing__plan:nth-child(1) {
+    display: none;
+  }
+  .pricing__plan:nth-child(3) {
+    display: none;
+  }
+  .pricing__plan-slider-controls {
+    display: flex;
   }
 }
 .work-together {

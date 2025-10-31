@@ -153,7 +153,7 @@
     }
 }
 
-@include media-down(md) {
+@include media-down(custom-md-plus) {
     .pricing {
         &__plan-container {
             display: block;
@@ -176,6 +176,56 @@
         &__plan {
             flex: 1 1 470px;
             width: 470px;
+            border-radius: 25px;
+        }
+    }
+}
+
+@include media-down(custom-594) {
+    .pricing {
+        &__title {
+            &::after {
+                content: "";
+                transform: translate(-50%, 20px);
+                width: 240px;
+                height: 40px;
+            }
+        }
+
+        &__plan-container {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        &__plan-slider {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 100%;
+            transform: translate(0, 0);
+        }
+
+        &__plan {
+            width: 100%;
+            position: relative;
+            height: auto;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+
+            &:nth-child(1) {
+                display: none;
+            }
+
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+
+        &__plan-slider-controls {
+            display: flex;
         }
     }
 }
