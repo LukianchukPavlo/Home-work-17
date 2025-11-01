@@ -384,6 +384,59 @@ a {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 1180px) {
+  .work-management__title {
+    font-weight: 700;
+    font-size: 3.555555556rem;
+    line-height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work-management__container {
+    display: block;
+    text-align: center;
+  }
+  .work-management__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: auto;
+  }
+  .work-management__title::after {
+    bottom: -10%;
+    left: 40%;
+    transform: translate(-15px, 10px);
+    width: 400px;
+    background-size: contain;
+  }
+  .work-management__get-started {
+    margin: 60px auto;
+  }
+  .work-management__container-img {
+    max-width: 561px;
+    margin: 0 auto;
+    height: 349px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .work-management__title::after {
+    left: 20%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .work-management__container-img {
+    height: 177px;
+  }
+  .work-management__title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: auto;
+  }
+  .work-management__title::after {
+    transform: translate(-15px, 20px);
+    left: 0;
+    width: 300px;
+  }
+}
 .footer {
   padding: 140px 0 65px;
   background-color: #043873;
