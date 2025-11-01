@@ -1,4 +1,4 @@
-@use "../base/variables" as *;
+@use "../base" as *;
 
 .header{
     height: 92px;
@@ -50,3 +50,41 @@
     }
     
 }
+ 
+@include media-down(lg) {
+    .header{
+        &__navigation{
+            display: none;
+            }
+        &__login{
+            margin-left: auto;
+        }
+        &__try{
+            margin-right: 20px;
+        }
+        &__dropdown{
+            display: grid;
+            height: 35px;
+            justify-content: space-between;     
+        }
+        &__span{
+            height: 2px;
+            width: 40px;
+            background-color: $colorWhite;
+        }
+    }
+}
+
+@include media-down(md) {
+    .header {
+        &__login{
+            display: none;
+        }
+        &__try{
+            display: none;
+        }
+        &__dropdown{
+            margin-left: auto;
+        }
+    }
+}   
