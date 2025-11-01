@@ -33,4 +33,46 @@
     }
     
 } 
+@include media-down(md) {
+    .hero {
+        background-position: 75% 20%;
+        
+        &__container {
+            display: block;
+            text-align: center;
+        }
+        &__try {
+            margin: 0 auto;
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+        &__container-img {
+            max-width: 551px;
+            margin: 0 auto;
+            height: 367px;
+        }
+        &__title{
+            font-weight: 700;
+            font-size: $H3FontSize;
+            line-height: $H3LineHeight;
+        }
+        
+    }
+}
+@include media-down(custom-450) {
+    .hero {
+        &__container-img {
+            height: 191px;
+        }
+    }
+}
+@include media-down(sm) {
+    .hero {
+        &__title{
+            font-weight: 700;
+            font-size: $H4FontSize;
+            line-height: $H4LineHeight;
+        }
+    }
+}
 

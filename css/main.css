@@ -287,6 +287,42 @@ a {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position: 75% 20%;
+  }
+  .hero__container {
+    display: block;
+    text-align: center;
+  }
+  .hero__try {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  .hero__container-img {
+    max-width: 551px;
+    margin: 0 auto;
+    height: 367px;
+  }
+  .hero__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero__container-img {
+    height: 191px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero__title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: auto;
+  }
+}
 .work-management {
   position: relative;
   background-color: #FFFFFF;
