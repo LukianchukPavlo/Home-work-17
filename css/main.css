@@ -525,6 +525,7 @@ a {
 }
 .footer__terms-item:first-child {
   padding-left: 20px;
+  padding-right: 20px;
 }
 .footer__terms-item:first-child::before {
   content: "";
@@ -545,7 +546,7 @@ a {
   background-repeat: no-repeat;
   top: 50%;
   right: 0;
-  transform: translate(110%, -10%);
+  transform: translate(10%, -10%);
 }
 .footer__icons {
   display: flex;
@@ -609,7 +610,19 @@ a {
   }
   .footer__icons {
     margin-left: 0;
-    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid;
+    border-color: #2E4E73;
+  }
+  .footer__terms {
+    padding-bottom: 20px;
+  }
+  .footer__terms-list {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer__terms-item {
+    flex: 0 0 33%;
   }
 }
 @media screen and (max-width: 576px) {

@@ -114,6 +114,7 @@
         line-height: $ParagraphP3RegularLineHeight;
             &:first-child {
                 padding-left: 20px;
+                padding-right: 20px;
                 &::before {
                     content: "";
                     position: absolute;
@@ -133,7 +134,7 @@
                     background-repeat: no-repeat;
                     top: 50%;
                     right: 0;
-                    transform: translate(110%, -10%);
+                    transform: translate(10%, -10%);
                 }    
         }
     }
@@ -141,8 +142,6 @@
         display: flex;
         gap: 32px;
         align-items: center;
-        
-        
     }
 }
 @include media-down (xl) {
@@ -212,10 +211,22 @@
         }
         &__icons {
             margin-left: 0;
-            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid;
+            border-color: #2E4E73;
         }
+        &__terms {
+            padding-bottom: 20px;
+            
+        }
+        
         &__terms-list {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
+        &__terms-item {
+            flex: 0 0 33%;
         }
     }
 }
