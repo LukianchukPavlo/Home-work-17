@@ -83,11 +83,12 @@
 @include media-down (md) {
     .work-together {
         &__container {
-            display: block;
+            flex-wrap: wrap;
+
             
          }
         &__container-img {
-            
+            order: 2;
             text-align: center;
         }
         &__image {
@@ -95,6 +96,8 @@
         }
         &__container-info {
             text-align: center;
+            order: 1;
+            margin-left: 0;
         }
         &__get-started {
             margin: 60px auto;

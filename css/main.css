@@ -444,11 +444,11 @@ a {
 .footer__container {
   display: flex;
   position: relative;
-}
-.footer__container:first-child {
   margin-bottom: 67px;
 }
-.footer__container:last-child {
+.footer__container-sources {
+  display: flex;
+  position: relative;
   padding-top: 32px;
   border-top: 1px solid;
   border-color: #2E4E73;
@@ -549,6 +549,73 @@ a {
   align-items: center;
 }
 
+@media screen and (max-width: 1400px) {
+  .footer__navigation {
+    margin-right: 40px;
+  }
+  .footer__try-container {
+    flex: 0 0 200px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .footer__navigation {
+    flex: 0 0 170px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer__container :nth-child(1), .footer__container :nth-child(5) {
+    flex: 0 0 50%;
+  }
+  .footer__container {
+    flex-wrap: wrap;
+  }
+  .footer__container :nth-child(1) {
+    order: 1;
+  }
+  .footer__container :nth-child(5) {
+    order: 2;
+  }
+  .footer__navigation {
+    flex: 1 1 auto;
+    margin-right: 0;
+    order: 3;
+    margin-top: 20px;
+  }
+  .footer__brand {
+    margin-right: 0;
+    padding-right: 10px;
+  }
+  .footer__try-container {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .footer__try-container {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .footer__container-sources {
+    border-top: none;
+    flex-direction: column;
+  }
+  .footer__icons {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer__container {
+    align-items: center;
+    text-align: center;
+  }
+  .footer__get-started {
+    margin: 0 auto;
+  }
+}
 .pricing {
   position: relative;
   background-color: #FFFFFF;
@@ -804,9 +871,10 @@ a {
 }
 @media screen and (max-width: 768px) {
   .work-together__container {
-    display: block;
+    flex-wrap: wrap;
   }
   .work-together__container-img {
+    order: 2;
     text-align: center;
   }
   .work-together__image {
@@ -814,6 +882,8 @@ a {
   }
   .work-together__container-info {
     text-align: center;
+    order: 1;
+    margin-left: 0;
   }
   .work-together__get-started {
     margin: 60px auto;

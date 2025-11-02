@@ -7,22 +7,15 @@
     &__container{
         display: flex;
         position: relative;
-        
-        
-        &:first-child {
-            margin-bottom: 67px;
-            
-            
-        }
+        margin-bottom: 67px;
+    }
 
-        &:last-child {
-            padding-top: 32px;
-            border-top: 1px solid;
-            border-color: #2E4E73;
-            
-           
-            
-        }
+    &__container-sources {
+        display: flex;
+        position: relative;
+        padding-top: 32px;
+        border-top: 1px solid;
+        border-color: #2E4E73;
     }
     
 
@@ -145,5 +138,87 @@
         align-items: center;
         
         
+    }
+}
+@include media-down (xl) {
+    .footer{
+        &__navigation{
+            margin-right: 40px;
+        }
+        &__try-container{
+            flex: 0 0 200px;
+        }
+    }
+}
+@include media-down (lg) {
+    .footer {
+        &__navigation{
+            flex: 0 0 170px;
+            margin-right: 20px;
+        }
+    }
+}
+@include media-down (custom-md-plus) {
+    .footer {
+        &__container {
+            
+            & :nth-child(1), & :nth-child(5){
+                flex: 0 0 50%;
+            }
+            flex-wrap: wrap;
+            & :nth-child(1){
+                order: 1;
+            }
+            & :nth-child(5){
+                order: 2;
+            }
+        }
+        &__navigation{
+            flex: 1 1 auto;
+            margin-right: 0;
+            order: 3;
+            margin-top: 20px;
+        }
+        &__brand{
+            margin-right: 0;
+            padding-right: 10px;
+        }
+        &__try-container {
+            padding-left: 10px;
+        }
+        
+    }
+}
+@include media-down (md){
+    .footer {
+        &__container {
+            flex-direction: column;
+            gap: 100px;
+            
+        }
+        &__try-container {
+            padding-left: 0;
+            margin-left: 0;
+        }
+        &__container-sources {
+            border-top: none;
+            flex-direction: column;
+            
+        }
+        &__icons {
+            margin-left: 0;
+            
+        }
+    }
+}
+@include media-down (sm) {
+    .footer {
+        &__container {
+            align-items: center;
+            text-align: center;
+        }
+        &__get-started {
+            margin: 0 auto;
+        }
     }
 }
