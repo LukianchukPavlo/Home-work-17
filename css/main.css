@@ -832,12 +832,13 @@ a {
 @media screen and (max-width: 450px) {
   .work-together__title {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: auto;
   }
   .work-together__title::after {
-    left: 20%;
-    width: 250px;
+    bottom: -50%;
+    left: 45%;
+    width: 150px;
   }
   .work-together__image {
     width: 280px;

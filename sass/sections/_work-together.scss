@@ -116,11 +116,12 @@
     .work-together {
     &__title{
             font-weight: 700;
-            font-size: $H3FontSize;
-            line-height: $H3LineHeight;
+            font-size: $H4FontSize;
+            line-height: $H4LineHeight;
             &::after{
-                left: 20%;
-                width: 250px;
+                bottom: -50%;
+                left: 45%;
+                width: 150px;
                 
             }
         }
