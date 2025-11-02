@@ -49,5 +49,76 @@
     &__get-started {
         margin-top: 60px;
     }
-    
-} 
+}
+
+@include media-down (xl) {
+    .customise {
+        &__title {
+           &::after{
+                left: 10%;
+           } 
+        }
+    }
+}
+
+@include media-down (lg) {
+    .customise{
+        &__title {
+            font-weight: 700;
+            font-size: $H2FontSize;
+            line-height: $H2LineHeight;
+            
+        }
+        &__container-img {
+        max-width: 460px;
+        max-height: 320px;
+        }
+    }    
+}
+@include media-down (md) {
+    .customise { 
+        &__container{
+            display: block;
+        }
+        &__container-info {
+            margin: 0 auto;
+            text-align: center;
+
+        }
+        &__container-img {
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: $H3FontSize;
+            line-height: $H3LineHeight;
+            &::after{
+                left: 50%;
+                width: 300px;
+                bottom: -10%;
+           } 
+        }
+        &__container-img {
+        max-width: 557px;
+        max-height: 388px;
+        }
+    }
+}
+@include media-down (custom-450) {
+    .customise {
+        &__title {
+            font-size: $H4FontSize;
+            line-height: $H4LineHeight;
+            &::after{
+                left: 45%;
+                width: 200px;
+                bottom: -30%;
+           } 
+
+        }
+        &__container-img {
+        max-width: 285px;
+        max-height: 199px;
+        }
+    }
+}
+
