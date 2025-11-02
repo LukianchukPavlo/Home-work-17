@@ -197,7 +197,7 @@
     .footer {
         &__container {
             flex-direction: column;
-            gap: 100px;
+            gap: 20px;
             
         }
         &__try-container {
@@ -216,8 +216,7 @@
             border-color: #2E4E73;
         }
         &__terms {
-            padding-bottom: 20px;
-            
+            padding-bottom: 20px;   
         }
         
         &__terms-list {
@@ -225,9 +224,9 @@
             gap: 20px;
         }
 
-        &__terms-item {
-            flex: 0 0 33%;
-        }
+        // &__terms-item {
+        //     flex: 0 0 30%;
+        // }
     }
 }
 @include media-down (sm) {
@@ -235,10 +234,20 @@
         &__container {
             align-items: center;
             text-align: center;
+            gap: 20px;
         }
         &__get-started {
             margin: 0 auto;
-            
+        }
+        &__terms-list{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__terms {
+            justify-content: center;
+        }
+        &__icons {
+            justify-content: center;
         }
     }
 }

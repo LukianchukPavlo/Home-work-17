@@ -598,7 +598,7 @@ a {
 @media screen and (max-width: 768px) {
   .footer__container {
     flex-direction: column;
-    gap: 100px;
+    gap: 20px;
   }
   .footer__try-container {
     padding-left: 0;
@@ -621,17 +621,25 @@ a {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .footer__terms-item {
-    flex: 0 0 33%;
-  }
 }
 @media screen and (max-width: 576px) {
   .footer__container {
     align-items: center;
     text-align: center;
+    gap: 20px;
   }
   .footer__get-started {
     margin: 0 auto;
+  }
+  .footer__terms-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__terms {
+    justify-content: center;
+  }
+  .footer__icons {
+    justify-content: center;
   }
 }
 .pricing {
