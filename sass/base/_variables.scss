@@ -65,12 +65,13 @@ $ParagraphP3RegularLineHeight: 1.111111111;
 ** Breakpoints
 */
 $breakpoints: (
-  xs: 0,
+  xs: 350px,
   custom-450: 450px,
   sm: 576px,
   custom-594: 594px,
   custom-635: 635px,
   md: 768px,
+  md-plus: 900px,
   custom-md-plus: 992px,
   lg: 1180px,
   xl-mini: 1369px,

@@ -153,6 +153,14 @@
     }
 }
 
+@include media-down (lg) {
+    .pricing {
+        &__title {
+            font-size: $H2FontSize;
+            line-height: $H2LineHeight;
+        }
+    }
+}
 @include media-down(custom-md-plus) {
     .pricing {
         &__plan-container {
@@ -180,15 +188,27 @@
         }
     }
 }
+@include media-down(md) {
+    .pricing{
+        &__title {
+            font-size: $H3FontSize;
+            line-height: $H3LineHeight;
+            &::after {
+                transform: translate(0, 20px);
+                width: 230px;
+                height: 40px;
+            }
+        }
+    }
+}
 
 @include media-down(custom-594) {
     .pricing {
         &__title {
+            font-size: $H4FontSize;
+            line-height: $H4LineHeight;
             &::after {
-                content: "";
-                transform: translate(-50%, 20px);
-                width: 240px;
-                height: 40px;
+                width: 170px;
             }
         }
 
@@ -226,6 +246,17 @@
 
         &__plan-slider-controls {
             display: flex;
+        }
+    }
+}
+@include media-down(xs) {
+    .pricing {
+        &__title {
+            &::after {
+                left: 35%;
+                width: 100px;
+                bottom: -10%;
+            }
         }
     }
 }

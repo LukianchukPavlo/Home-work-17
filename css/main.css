@@ -218,10 +218,16 @@ a {
   width: 16px;
   height: 8px;
   gap: 0;
+  margin-left: 20px;
   background: url("../images/arrow-down1.svg") no-repeat;
 }
 .header__login {
   margin-right: 24px;
+}
+@media screen and (max-width: 1400px) {
+  .header__link::after {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 1180px) {
   .header__navigation {
@@ -287,8 +293,39 @@ a {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 1400px) {
+  .hero {
+    padding: 100px 0;
+  }
+  .hero__container-img {
+    max-width: 685px;
+    height: 457px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .hero {
+    padding: 140px 0;
+  }
+  .hero__container-img {
+    max-width: 526px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero__container-img {
+    height: 270px;
+  }
+}
 @media screen and (max-width: 768px) {
   .hero {
+    padding: 140px 0 100px 0;
     background-position: 75% 20%;
   }
   .hero__container {
@@ -305,22 +342,20 @@ a {
     margin: 0 auto;
     height: 367px;
   }
-  .hero__title {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: auto;
-  }
-}
-@media screen and (max-width: 450px) {
-  .hero__container-img {
-    height: 191px;
-  }
 }
 @media screen and (max-width: 576px) {
   .hero__title {
     font-weight: 700;
     font-size: 2rem;
     line-height: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero {
+    padding: 80px 0;
+  }
+  .hero__container-img {
+    height: 191px;
   }
 }
 .work-management {
@@ -766,6 +801,12 @@ a {
   background-color: #043873;
 }
 
+@media screen and (max-width: 1180px) {
+  .pricing__title {
+    font-size: 3.555555556rem;
+    line-height: auto;
+  }
+}
 @media screen and (max-width: 992px) {
   .pricing__plan-container {
     display: block;
@@ -789,12 +830,24 @@ a {
     border-radius: 25px;
   }
 }
-@media screen and (max-width: 594px) {
+@media screen and (max-width: 768px) {
+  .pricing__title {
+    font-size: 3rem;
+    line-height: auto;
+  }
   .pricing__title::after {
-    content: "";
-    transform: translate(-50%, 20px);
-    width: 240px;
+    transform: translate(0, 20px);
+    width: 230px;
     height: 40px;
+  }
+}
+@media screen and (max-width: 594px) {
+  .pricing__title {
+    font-size: 2rem;
+    line-height: auto;
+  }
+  .pricing__title::after {
+    width: 170px;
   }
   .pricing__plan-container {
     display: block;
@@ -825,6 +878,13 @@ a {
   }
   .pricing__plan-slider-controls {
     display: flex;
+  }
+}
+@media screen and (max-width: 350px) {
+  .pricing__title::after {
+    left: 35%;
+    width: 100px;
+    bottom: -10%;
   }
 }
 .work-together {

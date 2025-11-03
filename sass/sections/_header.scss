@@ -39,6 +39,7 @@
             width: 16px;
             height: 8px;
             gap: 0;
+            margin-left: 20px;
             background: url("../images/arrow-down1.svg") no-repeat;
         }
     }
@@ -50,7 +51,15 @@
     }
     
 }
- 
+@include media-down(xl) {
+    .header {
+        &__link {
+            &::after {
+                margin-left: 10px;
+            }
+        }
+    }
+} 
 @include media-down(lg) {
     .header{
         &__navigation{
