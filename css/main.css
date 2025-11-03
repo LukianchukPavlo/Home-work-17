@@ -361,7 +361,7 @@ a {
 .work-management {
   position: relative;
   background-color: #FFFFFF;
-  padding: 140px 0;
+  padding: 140px 0 0 0;
 }
 .work-management__container {
   position: relative;
@@ -419,17 +419,43 @@ a {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 1400px) {
+  .work-management__container::before {
+    top: -40%;
+  }
+  .work-management__container-img {
+    height: 448px;
+  }
+}
 @media screen and (max-width: 1180px) {
+  .work-management__container-img {
+    height: 328px;
+  }
   .work-management__title {
     font-weight: 700;
     font-size: 3.555555556rem;
     line-height: auto;
   }
 }
-@media screen and (max-width: 768px) {
-  .work-management__container {
-    display: block;
-    text-align: center;
+@media screen and (max-width: 992px) {
+  .work-management__container-info {
+    margin-right: 10px;
+    max-width: 440px;
+  }
+  .work-management__container-img {
+    height: 300px;
+  }
+  .work-management__title::after {
+    background-size: contain;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .work-management__container-info {
+    max-width: 400px;
+  }
+  .work-management {
+    padding-top: 100px;
   }
   .work-management__title {
     font-weight: 700;
@@ -438,6 +464,32 @@ a {
   }
   .work-management__title::after {
     bottom: -10%;
+    width: 400px;
+  }
+  .work-management__container-img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work-management__container {
+    display: block;
+    text-align: center;
+  }
+  .work-management__container::before {
+    top: -20%;
+    width: 603px;
+    height: 400px;
+  }
+  .work-management__container-info {
+    max-width: 748px;
+  }
+  .work-management__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: auto;
+  }
+  .work-management__title::after {
+    bottom: -15%;
     left: 40%;
     transform: translate(-15px, 10px);
     width: 400px;
@@ -454,7 +506,13 @@ a {
 }
 @media screen and (max-width: 635px) {
   .work-management__title::after {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 585px) {
+  .work-management__title::after {
     left: 20%;
+    bottom: -10%;
   }
 }
 @media screen and (max-width: 450px) {
@@ -467,9 +525,20 @@ a {
     line-height: auto;
   }
   .work-management__title::after {
+    transform: translate(-15px, 25px);
+    left: 40%;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 396px) {
+  .work-management__title::after {
+    left: 20%;
     transform: translate(-15px, 20px);
-    left: 0;
-    width: 300px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .work-management {
+    padding-top: 80px;
   }
 }
 .footer {
