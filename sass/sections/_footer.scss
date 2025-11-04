@@ -165,12 +165,11 @@
         display: flex;
         gap: 32px;
         align-items: center;
-        &:hover {
-            cursor: pointer;
-        }
+        
     }
     &__icons-img {
         &:hover{
+        filter: invert(50%);
         cursor: pointer;
         }
     }

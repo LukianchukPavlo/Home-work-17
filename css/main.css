@@ -682,10 +682,8 @@ a {
   gap: 32px;
   align-items: center;
 }
-.footer__icons:hover {
-  cursor: pointer;
-}
 .footer__icons-img:hover {
+  filter: invert(50%);
   cursor: pointer;
 }
 
