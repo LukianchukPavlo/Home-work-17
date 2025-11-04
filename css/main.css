@@ -635,6 +635,9 @@ a {
   padding-left: 25px;
   padding-right: 25px;
 }
+.footer__terms-item:first-child:hover {
+  cursor: pointer;
+}
 .footer__terms-item:first-child::before {
   content: "";
   position: absolute;
@@ -644,6 +647,9 @@ a {
   width: 19px;
   height: 19px;
   background-image: url("../images/Icon-world.svg");
+}
+.footer__terms-item:first-child::before:hover {
+  cursor: auto;
 }
 .footer__terms-item:first-child::after {
   content: "";
@@ -656,19 +662,19 @@ a {
   right: 0;
   transform: translate(10%, -10%);
 }
-.footer__terms-item-link {
+.footer__terms-link {
   font-weight: 400;
   font-size: 0.888888889rem;
   line-height: 1.111111111;
   color: white;
 }
-.footer__terms-item-link:hover {
+.footer__terms-link:hover {
   color: #FFE492;
 }
-.footer__terms-item-link:last-child {
+.footer__terms-link:last-child {
   cursor: auto;
 }
-.footer__terms-item-link:last-child:hover {
+.footer__terms-link:last-child:hover {
   color: #FFFFFF;
 }
 .footer__icons {

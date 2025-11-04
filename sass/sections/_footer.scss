@@ -116,6 +116,9 @@
             &:first-child {
                 padding-left: 25px;
                 padding-right: 25px;
+                &:hover {
+                    cursor: pointer;
+                }
                 &::before {
                     content: "";
                     position: absolute;
@@ -125,6 +128,9 @@
                     width: 19px;
                     height: 19px;
                     background-image: url("../images/Icon-world.svg");
+                    &:hover {
+                        cursor: auto;
+                    }
                 }
                 &::after {
                     content: "";
@@ -136,10 +142,11 @@
                     top: 50%;
                     right: 0;
                     transform: translate(10%, -10%);
+                    
                 }    
         }
     }
-    &__terms-item-link {
+    &__terms-link {
         font-weight: 400;
         font-size: $ParagraphP3RegularFonteSize;
         line-height: $ParagraphP3RegularLineHeight;
