@@ -682,6 +682,12 @@ a {
   gap: 32px;
   align-items: center;
 }
+.footer__icons:hover {
+  cursor: pointer;
+}
+.footer__icons-img:hover {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1400px) {
   .footer__navigation {

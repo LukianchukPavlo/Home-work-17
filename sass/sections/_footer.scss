@@ -165,6 +165,14 @@
         display: flex;
         gap: 32px;
         align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__icons-img {
+        &:hover{
+        cursor: pointer;
+        }
     }
 }
 @include media-down (xl) {
