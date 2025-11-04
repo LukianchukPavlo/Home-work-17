@@ -204,6 +204,7 @@
 
 @include media-down(custom-594) {
     .pricing {
+        padding: 80px 0;
         &__title {
             font-size: $H4FontSize;
             line-height: $H4LineHeight;
@@ -246,6 +247,7 @@
 
         &__plan-slider-controls {
             display: flex;
+            margin-top: 85px;
         }
     }
 }

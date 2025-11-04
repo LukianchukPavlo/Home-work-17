@@ -911,6 +911,9 @@ a {
   }
 }
 @media screen and (max-width: 594px) {
+  .pricing {
+    padding: 80px 0;
+  }
   .pricing__title {
     font-size: 2rem;
     line-height: auto;
@@ -947,6 +950,7 @@ a {
   }
   .pricing__plan-slider-controls {
     display: flex;
+    margin-top: 85px;
   }
 }
 @media screen and (max-width: 350px) {
