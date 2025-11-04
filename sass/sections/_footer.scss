@@ -113,8 +113,8 @@
         font-size: $ParagraphP3RegularFonteSize;
         line-height: $ParagraphP3RegularLineHeight;
             &:first-child {
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: 25px;
+                padding-right: 25px;
                 &::before {
                     content: "";
                     position: absolute;
@@ -154,15 +154,22 @@
         }
     }
 }
+@include media-down (lg-plus) {
+    .footer {
+        &__navigation {
+            margin-right: 0;
+        }
+    }
+}
 @include media-down (lg) {
     .footer {
         &__navigation{
             flex: 0 0 170px;
-            margin-right: 20px;
+            
         }
     }
 }
-@include media-down (custom-md-plus) {
+@include media-down (md-max) {
     .footer {
         &__container {
             
@@ -191,6 +198,13 @@
             padding-left: 10px;
         }
         
+    }
+}
+@include media-down (md-plus) {
+    .footer {
+        &__terms-list {
+            gap: 20px;
+        }
     }
 }
 @include media-down (md){
@@ -223,10 +237,13 @@
             flex-wrap: wrap;
             gap: 20px;
         }
-
-        // &__terms-item {
-        //     flex: 0 0 30%;
-        // }
+    }
+}
+@include media-down (custom-635) {
+    .footer {
+        &__terms-list {
+            gap: 10px;
+        }
     }
 }
 @include media-down (sm) {
