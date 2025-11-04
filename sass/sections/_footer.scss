@@ -103,6 +103,7 @@
         
         
         
+        
             
     }
     &__terms-item {
@@ -145,6 +146,12 @@
         color: white;
         &:hover {
             color: $secondaryColorYellow;
+        }
+        &:last-child {
+            cursor: auto;
+            &:hover {
+                color: $colorWhite;
+            }
         }
     }
     &__icons {

@@ -665,6 +665,12 @@ a {
 .footer__terms-item-link:hover {
   color: #FFE492;
 }
+.footer__terms-item-link:last-child {
+  cursor: auto;
+}
+.footer__terms-item-link:last-child:hover {
+  color: #FFFFFF;
+}
 .footer__icons {
   display: flex;
   gap: 32px;
