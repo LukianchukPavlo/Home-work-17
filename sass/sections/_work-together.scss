@@ -139,6 +139,14 @@
         }
     }
 }
+@include media-down (sm) {
+    .work-together {
+        &__image{
+            width: 420px;
+            height: 410px;
+        }
+    }
+}
 @include media-down (custom-450) {
     .work-together {
         padding-bottom: 80px;

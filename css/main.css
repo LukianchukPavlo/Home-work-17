@@ -1091,6 +1091,12 @@ a {
     width: 250px;
   }
 }
+@media screen and (max-width: 576px) {
+  .work-together__image {
+    width: 420px;
+    height: 410px;
+  }
+}
 @media screen and (max-width: 450px) {
   .work-together {
     padding-bottom: 80px;
