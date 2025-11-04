@@ -99,7 +99,7 @@
 
     &__terms-list {
         display: flex;
-        gap: 60px;
+        gap: 30px;
         
         
         
@@ -136,6 +136,15 @@
                     right: 0;
                     transform: translate(10%, -10%);
                 }    
+        }
+    }
+    &__terms-item-link {
+        font-weight: 400;
+        font-size: $ParagraphP3RegularFonteSize;
+        line-height: $ParagraphP3RegularLineHeight;
+        color: white;
+        &:hover {
+            color: $secondaryColorYellow;
         }
     }
     &__icons {
@@ -203,7 +212,7 @@
 @include media-down (md-plus) {
     .footer {
         &__terms-list {
-            gap: 20px;
+            gap: 10px;
         }
     }
 }
@@ -235,14 +244,14 @@
         
         &__terms-list {
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 10px;
         }
     }
 }
 @include media-down (custom-635) {
     .footer {
         &__terms-list {
-            gap: 10px;
+            gap: 5px;
         }
     }
 }

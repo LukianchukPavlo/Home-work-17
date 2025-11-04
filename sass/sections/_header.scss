@@ -29,6 +29,9 @@
         position: relative;
     }
     &__link{
+        &:hover {
+            color: $secondaryColorYellow;
+        }
         color: $colorWhite;
         text-decoration: none;
         &::after{
