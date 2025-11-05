@@ -742,6 +742,12 @@ a {
     flex-direction: column;
     gap: 20px;
   }
+  .footer__container :nth-child(1) {
+    order: 1;
+  }
+  .footer__container :nth-child(5) {
+    order: 5;
+  }
   .footer__try-container {
     padding-left: 0;
     margin-left: 0;

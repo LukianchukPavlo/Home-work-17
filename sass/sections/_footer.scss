@@ -242,6 +242,12 @@
         &__container {
             flex-direction: column;
             gap: 20px;
+            & :nth-child(1){
+                order: 1;
+            }
+            & :nth-child(5){
+                order: 5;
+            }
             
         }
         &__try-container {
